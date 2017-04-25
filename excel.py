@@ -1,5 +1,7 @@
 import xlrd,xlwt
 
+#读取各个sheet里面的第三个和第八个字段，一第三个为key 比较第八个字段的value 选择最大的存储
+
 data = xlrd.open_workbook('1.xlsx')
 workboot = xlwt.Workbook(encoding='ascii')
 worksheet = workboot.add_sheet("1")
